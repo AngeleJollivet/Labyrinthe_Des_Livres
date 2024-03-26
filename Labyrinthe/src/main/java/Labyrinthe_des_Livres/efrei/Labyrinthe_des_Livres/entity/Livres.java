@@ -5,18 +5,18 @@ import Labyrinthe_des_Livres.efrei.Labyrinthe_des_Livres.enumm.PublicCible;
 import jakarta.persistence.*;
 @Entity
 
-public class Livre {
+public class Livres {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    private double prix;
+    public Long id;
+    public double prix;
     @Enumerated(EnumType.STRING)
-    private GenreLitteraire genreLitteraire;
-    private String auteur;
+    public GenreLitteraire genreLitteraire;
+    public String auteur;
     @Enumerated(EnumType.STRING)
-    private PublicCible publicCible;
-    private int anneeSortie;
-
+    public PublicCible publicCible;
+    public int anneeSortie;
+    public long numStand;
 
 
     // Getters and setters
